@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/muquiventas2016?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">Fedora12</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="pojo/Categoria.hbm.xml"/>
+    <mapping resource="pojo/Tventa.hbm.xml"/>
+    <mapping resource="pojo/Tproducto.hbm.xml"/>
+    <mapping resource="pojo/Tventadetalle.hbm.xml"/>
+    <mapping resource="pojo/Egreso.hbm.xml"/>
+    <mapping resource="pojo/Ingreso.hbm.xml"/>
+    <mapping resource="pojo/Movimiento.hbm.xml"/>
+    <mapping resource="pojo/Usuario.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

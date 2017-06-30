@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2/01/2016 05:27:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Tproducto" table="tproducto" catalog="muquiventas2016" optimistic-lock="version">
+        <id name="idProducto" type="java.lang.Integer">
+            <column name="idProducto" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="categoria" class="pojo.Categoria" fetch="select">
+            <column name="categoria_id" not-null="true" />
+        </many-to-one>
+        <property name="codigoBarras" type="string">
+            <column name="codigoBarras" length="70" not-null="true" unique="true" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" length="700" not-null="true" />
+        </property>
+        <property name="precioVentaUnitario" type="big_decimal">
+            <column name="precioVentaUnitario" precision="18" not-null="true" />
+        </property>
+        <property name="cantidad" type="int">
+            <column name="cantidad" not-null="true" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="100" not-null="true" />
+        </property>
+        <property name="precioProveedor" type="big_decimal">
+            <column name="precioProveedor" precision="18" not-null="true" />
+        </property>
+        <set name="tventadetalles" table="tventadetalle" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="idProducto" not-null="true" />
+            </key>
+            <one-to-many class="pojo.Tventadetalle" />
+        </set>
+    </class>
+</hibernate-mapping>
