@@ -7,4 +7,4 @@ Captura de Ingresos.
 Captura de Egresos.
 Reporte de ventas.
 Inventarios.
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/muqui/System-POS/blob/master/src/images/crearCategoria64x64.png)
