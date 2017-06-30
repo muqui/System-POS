@@ -7,6 +7,7 @@ Captura de Ingresos.
 Captura de Egresos.
 Reporte de ventas.
 Inventarios.
+
 ![alt text](https://github.com/muqui/System-POS/blob/master/src/Screenshot/Login.png)
 ![alt text](https://github.com/muqui/System-POS/blob/master/src/Screenshot/Admin.png)
 ![alt text](https://github.com/muqui/System-POS/blob/master/src/Screenshot/User.png)
