@@ -7,3 +7,4 @@ Captura de Ingresos.
 Captura de Egresos.
 Reporte de ventas.
 Inventarios.
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
